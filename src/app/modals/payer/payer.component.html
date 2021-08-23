@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="end">
+            <ion-button (click)="dismissModal()">
+                close
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <h2 style="margin-left: 5%;margin-top: 10%"><b>Choisir un moyen de paiement</b></h2>
+
+
+    <ion-row style="margin-right: 5%;margin-top: 10%">
+        <ion-col>
+            <ion-card class="text-center" (click)="onOpenCard()" style="height: 100%;width: 100%">
+                <ion-icon style="width: 40%;height: 40%;margin-top: 3%" name="card-outline"></ion-icon>
+                <h3>Carte Visa</h3>
+            </ion-card>
+        </ion-col>
+        <ion-col>
+            <ion-card class="text-center" (click)="onOpenVisa()" style="height: 100%;width: 100%">
+                <ion-icon style="width: 40%;height: 40%;margin-top: 3%" name="wallet-outline"></ion-icon>
+                <h4>Paypal</h4>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+
+</ion-content>

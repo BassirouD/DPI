@@ -1,0 +1,45 @@
+<ion-content style="--background: #f6f7f9">
+    <ion-row>
+        <ion-col style="margin-top: 25%" class="ion-text-center">
+            <h1><b>Connexion</b></h1>
+        </ion-col>
+        <ion-col>
+            <div style="width: 200px;
+                        height: 200px;
+                        background-color: #3a7be0;
+                        border-bottom-left-radius: 200px;
+
+">
+            </div>
+        </ion-col>
+    </ion-row>
+
+    <form>
+        <ion-item lines="none">
+            <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput type="mail" class="cInputWei">
+            </mat-form-field>
+        </ion-item>
+        <ion-item lines="none">
+            <mat-form-field appearance="fill">
+                <mat-label>Mot de passe</mat-label>
+                <input matInput type="mail" class="cInputWei">
+            </mat-form-field>
+        </ion-item>
+
+        <ion-row class="classCol2">
+            <ion-col>
+                Mot de passe oublié?
+            </ion-col>
+            <ion-col>
+                <b>Modifier le mot de passe</b>
+            </ion-col>
+        </ion-row>
+
+        <ion-button color="secondary" (click)="goToAccueil()" expand="block" style="margin-left: 4%;margin-right: 4%">Accéder à votre compte</ion-button>
+    </form>
+    <br>
+
+    <p class="ion-text-center">Je n'ai pas encore de compte. <b style="color: #3dc2ff" (click)="goToInscription()">M'inscrire</b></p>
+</ion-content>
